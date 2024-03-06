@@ -17,7 +17,6 @@ function LandingPage() {
       />
       <div className={style.landingPageContainer}>
         <LogoHeader />
-
         <div className={style.bodyDiv}>
           <h1>Unlimited movies, TV shows and more</h1>
           <p className={style.priceLine}>Starts at ₹149. Cancel anytime.</p>
@@ -37,10 +36,55 @@ function LandingPage() {
           </div>
         </div>
       </div>
+
+      <div className={style.reasonsDiv}>
+        <p>More reasons to join</p>
+        <div className={style.reasonsChildDivContainer}>
+          <div className={style.reasonsChildDiv}>
+            <h2>Stories tailored to your taste</h2>
+            <img
+              src="/images/handStar.png"
+              alt=""
+              className={style.reasonsImage1}
+            />
+          </div>
+          <div className={style.reasonsChildDiv}>
+            <h2>Cancel or switch plans anytime</h2>
+            <img
+              src="/images/handshake.png"
+              alt=""
+              className={style.reasonsImage2}
+            />
+          </div>
+          <div className={style.reasonsChildDiv}>
+            <h2>A place just for kids</h2>
+            <img
+              src="/images/heart.png"
+              alt=""
+              className={style.reasonsImage3}
+            />
+          </div>
+          <div className={style.reasonsChildDiv}>
+            <h2>For your phone,laptop,tablet and TV</h2>
+            <img
+              src="/images/mobile.png"
+              alt=""
+              className={style.reasonsImage4}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className={style.faqContainer}>
+        <p>Frequently Asked Questions</p>
+        <div className={style.faqChildDivContainer}>
+          <div className={style.faqChildDiv1}>
+            <p>question1</p>
+            {/*icon */}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 export default LandingPage;
-/*
-          
-*/

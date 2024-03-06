@@ -1,24 +1,29 @@
 .outerContainer {
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .bannerImage {
   width: 100%;
+  height: 800px;
 }
 .landingPageContainer {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: 800px;
+  position: relative;
+  top: -804px;
+  left: 0;
   background: rgba(0, 0, 0, 0.8);
   z-index: 1000;
+  overflow: hidden;
+  margin: 0;
 }
 
 .bodyDiv {
+  z-index: 1000;
   width: 100%;
+  max-height: 400px;
   background: transparent;
   margin-top: 3em;
   color: white;
@@ -33,7 +38,6 @@
   line-height: 1.2;
   width: 60%;
   margin-bottom: 0px;
-  background-color: rgb(179, 117, 36);
   background-color: transparent;
   text-align: center;
   padding: 10px;
@@ -53,21 +57,23 @@
 
 .getStartedDiv {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   margin-top: 10px;
   display: flex;
   justify-content: center;
   padding: 15px;
   background: linear-gradient(
     to bottom,
+    transparent,
     rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0)
   );
 }
 .getStartedDiv input[type="email"] {
   font-size: 1em;
   color: rgb(202, 199, 199);
   width: 32%;
+  height: 15%;
   padding: 15px;
   border: 1px solid darkgray;
   border-radius: 5px;
@@ -76,17 +82,106 @@
 }
 
 .getStartedDiv button {
+  height: 60%;
   background-color: rgb(214, 30, 30);
   color: white;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
   width: 12%;
   font-size: 1.5em;
   font-weight: 600;
   padding: 0px;
   transition: background-color 2s ease;
+  transition: color 02s ease;
 }
 
 .getStartedDiv button:hover {
   background-color: rgb(87, 3, 3);
+  color: rgb(15, 245, 138);
+}
+.reasonsDiv {
+  margin-top: -805px;
+  padding-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  min-height: 300px;
+  max-width: 100vw;
+  overflow-y: auto;
+  color: white;
+  background-color: black;
+  border-top: 5px solid firebrick;
+  border-bottom: 5px solid firebrick;
+}
+.reasonsDiv p {
+  margin: 0;
+  margin-left: 60px;
+  margin-top: 75px;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 5px 25px;
+}
+
+.reasonsChildDivContainer {
+  width: 100%;
+  max-width: 90vw;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+}
+.reasonsChildDiv {
+  background: linear-gradient(to bottom right, #3d1149, #3d1149);
+  border-radius: 20px;
+  max-width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.reasonsChildDiv h2 {
+  width: 83%;
+  font-size: 2.2em;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  overflow-wrap: break-word;
+}
+.reasonsImage1 {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+.reasonsImage2 {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+.reasonsImage3 {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+.reasonsImage4 {
+  width: 90px;
+  border-radius: 50%;
+  height: auto;
+  position: absolute;
+  top: 190px;
+  right: 10px;
 }
