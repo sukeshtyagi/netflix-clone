@@ -16,15 +16,14 @@
   border: none;
 }
 .logo {
-  background-color: red;
   background-color: transparent;
   color: rgb(214, 30, 30);
   font-weight: 900;
   font-size: 3em;
   margin-left: 120px;
+  cursor: pointer;
 }
 .optionDiv {
-  background-color: red;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -54,5 +53,4 @@
 .button:hover {
   background-color: rgb(87, 3, 3);
   color: rgb(15, 245, 138);
-
 }

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import style from "../style/LandingPage.module.css";
 import LogoHeader from "./LogoHeader";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 function LandingPage() {
   const [email, setEmail] = useState("");
@@ -78,9 +80,34 @@ function LandingPage() {
       <div className={style.faqContainer}>
         <p>Frequently Asked Questions</p>
         <div className={style.faqChildDivContainer}>
-          <div className={style.faqChildDiv1}>
-            <p>question1</p>
-            {/*icon */}
+          <div className={style.faqChildDiv}>
+            <p>What is Netflix?</p>
+            <FontAwesomeIcon icon={faPlus} className={style.plusIcon} />
+          </div>
+
+          <div className={style.faqChildDiv}>
+            <p>How much does Netflix?</p>
+            <FontAwesomeIcon icon={faPlus} className={style.plusIcon} />
+          </div>
+
+          <div className={style.faqChildDiv}>
+            <p>Where can I watch?</p>
+            <FontAwesomeIcon icon={faPlus} className={style.plusIcon} />
+          </div>
+
+          <div className={style.faqChildDiv}>
+            <p>How do I cancel?</p>
+            <FontAwesomeIcon icon={faPlus} className={style.plusIcon} />
+          </div>
+
+          <div className={style.faqChildDiv}>
+            <p>What can I watch on Netflix?</p>
+            <FontAwesomeIcon icon={faPlus} className={style.plusIcon} />
+          </div>
+
+          <div className={style.faqChildDiv}>
+            <p>Is Netflix good for kids?</p>
+            <FontAwesomeIcon icon={faPlus} className={style.plusIcon} />
           </div>
         </div>
       </div>
