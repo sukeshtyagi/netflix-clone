@@ -1,15 +1,11 @@
-/* LandingPage.module.css */
-
 .outerContainer {
   width: 100vw;
   height: 100vh;
-  overflow: auto;
   background: rgba(0, 0, 0, 1);
 }
 
 .bannerImage {
   width: 100%;
-  height: auro;
 }
 .landingPageContainer {
   position: fixed;
@@ -17,6 +13,80 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.bodyDiv {
+  width: 100%;
+  background: transparent;
+  margin-top: 3em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bodyDiv h1 {
+  font-size: 4em;
+  line-height: 1.2;
+  width: 60%;
+  margin-bottom: 0px;
+  background-color: rgb(179, 117, 36);
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+}
+
+.bodyDiv p {
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.priceLine {
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.getStartedDiv {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+.getStartedDiv input[type="email"] {
+  font-size: 1em;
+  color: rgb(202, 199, 199);
+  width: 32%;
+  padding: 15px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.getStartedDiv button {
+  background-color: rgb(214, 30, 30);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 12%;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 0px;
+  transition: background-color 2s ease;
+}
+
+.getStartedDiv button:hover {
+  background-color: rgb(87, 3, 3);
 }
