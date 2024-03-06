@@ -3,13 +3,9 @@ import style from "../style/LandingPage.module.css";
 import LogoHeader from "./LogoHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import SignInOption from "./SignInOption";
 
 function LandingPage() {
-  const [email, setEmail] = useState("");
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
   return (
     <div className={style.outerContainer}>
       <img
@@ -19,24 +15,7 @@ function LandingPage() {
       />
       <div className={style.landingPageContainer}>
         <LogoHeader />
-        <div className={style.bodyDiv}>
-          <h1>Unlimited movies, TV shows and more</h1>
-          <p className={style.priceLine}>Starts at ₹149. Cancel anytime.</p>
-          <p>
-            Ready to watch? Enter your email to create or restart your
-            membership.
-          </p>
-
-          <div className={style.getStartedDiv}>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={handleEmailChange}
-            />
-            <button onClick={() => console.log(email)}>Get Started</button>
-          </div>
-        </div>
+        <SignInOption landingPageHeader="used in landing page" />
       </div>
 
       <div className={style.reasonsDiv}>
@@ -111,6 +90,33 @@ function LandingPage() {
           </div>
         </div>
       </div>
+      <SignInOption
+        customStylesBodyDiv={{
+          backgroundColor: "black",
+          marginTop: 0,
+          marginBottom: 0,
+          borderBottom: "5px solid firebrick",
+          paddingBottom: 0,
+          height: "30vh",
+        }}
+        customStylesBodyDivPara={{
+          textAlign: "left",
+          marginLeft: "7vw",
+          marginTop: "8vh",
+        }}
+        customStylesGetStartedDiv={{
+          justifyContent: "flex-start",
+          marginLeft: "6vw",
+          marginTop: "2vh",
+        }}
+        customStylesInput={{
+          width: "50vw",
+          marginLeft: "0",
+        }}
+        customStylesButton={{
+          width: "20vw",
+        }}
+      />
     </div>
   );
 }
