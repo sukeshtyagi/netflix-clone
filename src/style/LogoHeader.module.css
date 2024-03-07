@@ -17,10 +17,10 @@
 }
 .logo {
   background-color: transparent;
-  color: rgb(214, 30, 30);
+  color: firebrick;
   font-weight: 900;
   font-size: 3em;
-  margin-left: 120px;
+  margin-left: 9vw; /*cstyle*/
   cursor: pointer;
 }
 .optionDiv {
