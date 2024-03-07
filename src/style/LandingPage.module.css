@@ -1,83 +1,111 @@
 .outerContainer {
+  background-image: url("../../public/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
   max-width: 100vw;
-  height: 100vh; /**/
-  height: auto; /**/
-  background-color: rgba(0, 0, 0, 1);
+  height: 100vh;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-
 .bannerImage {
-  width: 100%;
-  height: 800px;
+  width: 99vw;
+  height: 100vh;
 }
 .landingPageContainer {
-  width: 100%;
-  height: 800px;
-  position: relative;
-  top: -804px;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-  overflow: hidden;
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
 }
+/*
+  position: relative;
+  top: 0px;
+  left: 0;
+  
+  z-index: 1000;
+  margin: 0;
+*/
 
 .reasonsDiv {
-  margin-top: -805px;
+  box-sizing: border-box;
+  min-height: 20vh;
+  width: 100vw;
+  max-width: 100vw;
+  margin-top: 0px;
   padding-bottom: 65px;
   display: flex;
   flex-direction: column;
   gap: 0px;
-  align-items: flex-start;
-  min-height: 300px;
-  max-width: 100vw;
-  overflow-y: auto;
   color: white;
-  background-color: black;
+  align-items: flex-start;
+  overflow-x: hidden;
+  overflow-y: hidden;
   border-top: 5px solid firebrick;
   border-bottom: 5px solid firebrick;
 }
 .reasonsDiv p {
+  box-sizing: border-box;
   margin: 0;
-  margin-left: 60px;
-  margin-top: 75px;
+  margin-left: 4%;
+  margin-top: 13vh;
   font-size: 2em;
   font-weight: 600;
-  padding: 5px 25px;
+  padding: 1vw 0;
+  padding-left: 3vw;
 }
 
 .reasonsChildDivContainer {
-  width: 100%;
-  max-width: 90vw;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 100vw;
   overflow: hidden;
   height: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px;
   color: white;
   border-radius: 10px;
-  margin: auto;
+  margin-left: 6vw;
+  gap: 4vw;
 }
 .reasonsChildDiv {
+  box-sizing: border-box;
+  width: 19.2vw;
+  max-width: 100vw;
   background: linear-gradient(to bottom right, #3d1149, #3d1149);
   border-radius: 20px;
-  max-width: 280px;
   height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .reasonsChildDiv h2 {
-  width: 83%;
-  font-size: 2.2em;
+  box-sizing: border-box;
+  max-width: 100vw;
+  width: 17vw;
+  font-size: 2em;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
   overflow-wrap: break-word;
 }
 .reasonsImage1 {
+  box-sizing: border-box;
+  max-width: 100vw;
   width: 100px;
   height: auto;
   position: absolute;
@@ -85,6 +113,8 @@
   right: 10px;
 }
 .reasonsImage2 {
+  box-sizing: border-box;
+  max-width: 100vw;
   width: 100px;
   height: auto;
   position: absolute;
@@ -92,6 +122,8 @@
   right: 10px;
 }
 .reasonsImage3 {
+  box-sizing: border-box;
+  max-width: 100vw;
   width: 100px;
   height: auto;
   position: absolute;
@@ -99,6 +131,8 @@
   right: 10px;
 }
 .reasonsImage4 {
+  box-sizing: border-box;
+  max-width: 100vw;
   width: 90px;
   border-radius: 50%;
   height: auto;
@@ -107,9 +141,12 @@
   right: 10px;
 }
 .faqContainer {
+  box-sizing: border-box;
+  max-width: 100vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
+  margin: 0px;
   background-color: black;
   padding-bottom: 65px;
   border-bottom: 5px solid firebrick;
@@ -120,7 +157,8 @@
   color: white;
 }
 .faqChildDivContainer {
-  width: 100%;
+  box-sizing: border-box;
+  width: 85vw;
   max-width: 85vw;
   overflow: hidden;
   height: auto;
@@ -158,3 +196,11 @@
   font-size: 2em;
   padding-right: 5px;
 }
+.segregate {
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 100vw;
+  height: 1px;
+  border: 3px solid firebrick;
+}
+/*29-36*/

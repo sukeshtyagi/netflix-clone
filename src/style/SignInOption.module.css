@@ -5,12 +5,9 @@
   color: white;
   display: flex;
   flex-direction: column;
-  /*
-  align-items: center;
-  justify-content: center;
-  */
   background: transparent;
   margin-top: 3em;
+  overflow: hidden;
 }
 
 .bodyDiv h1 {

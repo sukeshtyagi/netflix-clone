@@ -1,5 +1,5 @@
 .logoContainer {
-  width: 100%;
+  width: 100vw;
   max-width: 100vw;
   /*
   position: fixed;
@@ -14,13 +14,15 @@
   background: orange;
   background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
   border: none;
+  box-sizing: border-box;
+  padding: 0;
 }
 .logo {
   background-color: transparent;
   color: firebrick;
   font-weight: 900;
   font-size: 3em;
-  margin-left: 9vw; /*cstyle*/
+  margin-left: 15vw; /*cstyle*/
   cursor: pointer;
 }
 .optionDiv {

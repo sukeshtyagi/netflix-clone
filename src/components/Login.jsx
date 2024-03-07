@@ -44,7 +44,14 @@ function Login() {
             </p>
           </div>
 
-          <AdditionalInfo />
+          <AdditionalInfo
+            item1="FAQ"
+            item2="Cookie Preference"
+            item5="Help Center"
+            item6="Corporate Information"
+            item9="Terms of Use"
+            item13="Privacy"
+          />
         </div>
       </div>
     </div>
