@@ -12,10 +12,6 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.bannerImage {
-  width: 99vw;
-  height: 100vh;
-}
 .landingPageContainer {
   box-sizing: border-box;
   margin: 0;
@@ -26,14 +22,6 @@
   max-height: 100vh;
   background: rgba(0, 0, 0, 0.8);
 }
-/*
-  position: relative;
-  top: 0px;
-  left: 0;
-  
-  z-index: 1000;
-  margin: 0;
-*/
 
 .reasonsDiv {
   box-sizing: border-box;
@@ -203,4 +191,3 @@
   height: 1px;
   border: 3px solid firebrick;
 }
-/*29-36*/
