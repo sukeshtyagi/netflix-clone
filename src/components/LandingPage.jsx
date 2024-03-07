@@ -106,7 +106,7 @@ function LandingPage() {
           marginTop: "2vh",
         }}
         customStylesInput={{
-          width: "45vw",
+          width: "40vw",
           marginLeft: "0",
         }}
         customStylesButton={{

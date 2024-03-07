@@ -19,13 +19,20 @@ function SignInOption({
   };
 
   const handelSignUpClick = () => {
-    console.log(email);
-    if (email !== "") {
+    if (isValidEmail(email)) {
+      setEmail(email);
+      console.log(email);
+
       navigate("/signup");
     } else {
       setErrorMsg(true);
-      console.log("else executed");
     }
+  };
+
+  const isValidEmail = (email) => {
+    const emailRegex =
+      /^[a-zA-Z0-9._-]+@(gmail\.com|yahoo\.com|rediffmail\.com)$/i;
+    return emailRegex.test(email);
   };
   return (
     <div className={style.bodyDiv} style={customStylesBodyDiv}>
@@ -57,7 +64,7 @@ function SignInOption({
           Get Started
         </button>
         {errorMsg && (
-          <p className={style.errorMsg}>Enter Email Id To Proceed.</p>
+          <p className={style.errorMsg}>Enter Correct Email Id To Proceed.</p>
         )}
       </div>
     </div>
