@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from "../style/SignInOption.module.css";
+import { useNavigate } from "react-router-dom";
 
 function SignInOption({
   landingPageHeader,
@@ -9,12 +10,23 @@ function SignInOption({
   customStylesGetStartedDiv,
   customStylesBodyDivPara,
 }) {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
+  const [errorMsg, setErrorMsg] = useState(false);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
 
+  const handelSignUpClick = () => {
+    console.log(email);
+    if (email !== "") {
+      navigate("/signup");
+    } else {
+      setErrorMsg(true);
+      console.log("else executed");
+    }
+  };
   return (
     <div className={style.bodyDiv} style={customStylesBodyDiv}>
       {landingPageHeader && (
@@ -38,12 +50,15 @@ function SignInOption({
           onChange={handleEmailChange}
         />
         <button
-          onClick={() => console.log(email)}
+          onClick={handelSignUpClick}
           className={style.getStartedDivButton}
           style={customStylesButton}
         >
           Get Started
         </button>
+        {errorMsg && (
+          <p className={style.errorMsg}>Enter Email Id To Proceed.</p>
+        )}
       </div>
     </div>
   );

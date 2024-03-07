@@ -31,7 +31,7 @@ function Login() {
           <div className={style.signUpOptionContainer}>
             <p className={style.signUpPara}>
               New to Netflix ?
-              <NavLink className={style.navlinkSignUpPara}>
+              <NavLink to='/signup' className={style.navlinkSignUpPara}>
                 Sign up now.
               </NavLink>
             </p>

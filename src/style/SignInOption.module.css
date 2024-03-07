@@ -1,7 +1,9 @@
 .bodyDiv {
+  box-sizing: border-box;
   z-index: 1000;
   width: 100%;
-  max-height: 400px;
+  height: 600px;
+  max-height: 600px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -13,9 +15,9 @@
 .bodyDiv h1 {
   font-size: 4em;
   line-height: 1.2;
-  width: 60%;
+  width: 40%;
   margin-bottom: 0px;
-  margin-left: 20vw;
+  margin-left: 30vw;
   background-color: transparent;
   text-align: center;
   padding: 10px;
@@ -38,10 +40,11 @@
 
 .getStartedDiv {
   width: 90%;
-  height: 50vh;
-  margin-top: 10px;
+  margin-top: 0px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center; /*customstyle*/
+  justify-content: flex-start; /*customstyle*/
+  align-items: center;
   padding: 15px;
   background: linear-gradient(
     to bottom,
@@ -53,12 +56,13 @@
 .getStartedDivInput {
   font-size: 1em;
   color: rgb(202, 199, 199);
-  width: 32vw;
+  width: 25vw;
   height: 2vh;
   padding: 15px;
   border: 1px solid darkgray;
   border-radius: 5px;
   margin-right: 10px;
+  margin-left: 25vw;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -80,4 +84,10 @@
 .getStartedDiv button:hover {
   background-color: rgb(87, 3, 3);
   color: rgb(15, 245, 138);
+}
+.errorMsg {
+  color: white;
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 100;
 }
