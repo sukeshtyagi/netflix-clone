@@ -43,21 +43,19 @@ function Login() {
               </NavLink>
             </p>
           </div>
-
-          <AdditionalInfo
-            item1="FAQ"
-            item2="Cookie Preference"
-            item5="Help Center"
-            item6="Corporate Information"
-            item9="Terms of Use"
-            item13="Privacy"
-          />
         </div>
+        <AdditionalInfo
+          item1="FAQ"
+          item2="Cookie Preference"
+          item5="Help Center"
+          item6="Corporate Information"
+          item9="Terms of Use"
+          item13="Privacy"
+          customStyleAdditionalInfoContainer={{ marginTop: "15vh" }}
+        />
       </div>
     </div>
   );
 }
 
 export default Login;
-/*
- */
