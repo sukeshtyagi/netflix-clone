@@ -9,7 +9,7 @@ function Login() {
     <div className={style.loginContainer}>
       <div className={style.overlay}>
         <LogoHeader
-          login="used in login page"
+          login="login as child comp"
           logoCustomStyle={{ marginLeft: "6vw" }}
         />
 
