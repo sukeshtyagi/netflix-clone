@@ -19,6 +19,11 @@ function AdditionalInfo({
   item14,
   item15,
   customStyleAdditionalInfoContainer,
+  signupAdditionalInfoContainerStyle,
+  signupContactParaStyle,
+  signupNavlinkStyle,
+  signupDropdownStyle,
+  signupCountryParaStyle,
 }) {
   const hindiIcon = <span className={style.icon}>🇮🇳</span>;
   const englishIcon = <span className={style.icon}>🇺🇸</span>;
@@ -33,72 +38,114 @@ function AdditionalInfo({
   };
   return (
     <div
-      className={style.additionalInfoContainer}
+      className={`${style.additionalInfoContainer} 
+                  ${signupAdditionalInfoContainerStyle}`}
       style={customStyleAdditionalInfoContainer}
     >
-      <p className={style.contactPara}>Questions? Call 00-800-919-1964</p>
+      <p className={`${style.contactPara} ${signupContactParaStyle}`}>
+        Questions? Call 00-800-919-1964
+      </p>
       <div className={style.infoChildDivContainer}>
         <div className={style.infoChildDiv}>
-          <NavLink to={`/${item1}`} className={style.navlink}>
+          <NavLink
+            to={`/${item1}`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item1}
           </NavLink>
-          <NavLink to={`/${item2}`} className={style.navlink}>
+          <NavLink
+            to={`/${item2}`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item2}
           </NavLink>
-          <NavLink to={`/${item3}`} className={style.navlink}>
+          <NavLink
+            to={`/${item3}`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item3}
           </NavLink>
-          <NavLink to={`/${item4}`} className={style.navlink}>
+          <NavLink
+            to={`/${item4}`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item4}
           </NavLink>
         </div>
-
         <div className={style.infoChildDiv}>
-          <NavLink to={`/${item5}-center`} className={style.navlink}>
+          <NavLink
+            to={`/${item5}-center`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item5}
           </NavLink>
-          <NavLink to={`/${item6}`} className={style.navlink}>
+          <NavLink
+            to={`/${item6}`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item6}
           </NavLink>
-          <NavLink to={`/${item7}-preference`} className={style.navlink}>
+          <NavLink
+            to={`/${item7}-preference`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item7}
           </NavLink>
-          <NavLink to={`/${item8}-notices`} className={style.navlink}>
+          <NavLink
+            to={`/${item8}-notices`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item8}
           </NavLink>
         </div>
-
         <div className={style.infoChildDiv}>
-          <NavLink to={`/${item9}`} className={style.navlink}>
+          <NavLink
+            to={`/${item9}`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item9}
           </NavLink>
-          <NavLink to={`/${item10}-to-watch`} className={style.navlink}>
+          <NavLink
+            to={`/${item10}-to-watch`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item10}
           </NavLink>
-          <NavLink to={`/${item11}-info`} className={style.navlink}>
+          <NavLink
+            to={`/${item11}-info`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item11}
           </NavLink>
-          <NavLink to={`/${item12}-on-netflix`} className={style.navlink}>
+          <NavLink
+            to={`/${item12}-on-netflix`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item12}
           </NavLink>
         </div>
-
         <div className={style.infoChildDiv}>
-          <NavLink to={`/${item13}-on-netflix`} className={style.navlink}>
+          <NavLink
+            to={`/${item13}-on-netflix`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item13}
           </NavLink>
-          <NavLink to={`/${item14}-on-netflix`} className={style.navlink}>
+          <NavLink
+            to={`/${item14}-on-netflix`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item14}
           </NavLink>
-          <NavLink to={`/${item15}-on-netflix`} className={style.navlink}>
+          <NavLink
+            to={`/${item15}-on-netflix`}
+            className={`${style.navlink} ${signupNavlinkStyle}`}
+          >
             {item15}
           </NavLink>
         </div>
       </div>
-
-      <div
-        className={`${style.dropdownContainer} ${isActive ? style.active : ""}`}
-      >
+      <div className={`${style.dropdownContainer} ${signupDropdownStyle}`}>
         <select
           className={style.dropdown}
           onClick={handleDropdownClick}
@@ -108,7 +155,10 @@ function AdditionalInfo({
           <option value="option1">{englishIcon} English</option>
         </select>
       </div>
-      <p className={style.countryPara}>Netflix India</p>
+
+      <p className={`${style.countryPara} ${signupCountryParaStyle}`}>
+        Netflix India
+      </p>
     </div>
   );
 }
