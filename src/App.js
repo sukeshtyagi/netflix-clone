@@ -18,7 +18,7 @@ function App() {
           path="/registeration/form"
           element={<SignUp child="registerationform" />}
         />
-        <Route path="/signup" element={<SignUp child="registeration" />} />
+        <Route path="/signup" element={<SignUp child="choosePlan" />} />
       </Routes>
     </BrowserRouter>
   );

@@ -20,7 +20,7 @@
   border-radius: 10px;
   height: auto;
   background-color: rgba(0, 0, 0, 0.75);
-  margin-top: 5vh;/**/
+  margin-top: 5vh; /**/
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -74,7 +74,7 @@
 .navlinkRememberContainer {
   max-width: 100%;
   text-decoration: none;
-  margin-left: 14vw;
+  margin-left: 16vw;
   color: rgb(152, 148, 148);
 }
 .signUpOptionContainer {
@@ -91,12 +91,14 @@
   margin: 0;
   margin-bottom: 10px;
   font-size: 20px;
+  color: rgb(150, 147, 147);
 }
 .signUpCaptcha {
   width: 100%;
   margin: 0;
   margin-bottom: 10px;
   font-size: 15px;
+  color: rgb(150, 147, 147);
 }
 .navlinkSignUpPara {
   color: white;

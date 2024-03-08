@@ -40,7 +40,6 @@ function SignInOption({
           <p className={style.priceLine}>Starts at ₹149. Cancel anytime.</p>
         </>
       )}
-
       <p className={style.bodyDivPara} style={customStylesBodyDivPara}>
         Ready to watch? Enter your email to create or restart your membership.
       </p>

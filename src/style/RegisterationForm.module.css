@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100vw; 
-  height: 75vh; 
+  max-width: 100vw;
+  height: 75vh;
   margin: 10vh 0 15vh 0;
 }
 
@@ -34,6 +34,7 @@ p {
   padding-bottom: 2px;
   font-size: 2em;
   padding: 2px;
+  color: #000;
 }
 
 .contentDivHeading2 {
@@ -43,6 +44,7 @@ p {
   padding-bottom: 2px;
   font-size: 2em;
   padding: 2px;
+  color: #000;
 }
 
 .contentDivLine2 {

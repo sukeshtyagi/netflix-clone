@@ -8,7 +8,7 @@ function RegisterationForm() {
   const userEmail = localStorage.getItem("userEmail");
 
   const handleButtonClick = () => {
-    navigate("/sign");
+    navigate("/signup");
   };
 
   return (

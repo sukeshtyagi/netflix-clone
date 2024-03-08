@@ -4,6 +4,7 @@ import LogoHeader from "./LogoHeader";
 import AdditionalInfo from "./AdditionalInfo";
 import Registeration from "./Registeration";
 import RegisterationForm from "./RegisterationForm";
+import ChoosePlan from "./ChoosePlan";
 
 function SignUp({ child }) {
   return (
@@ -29,6 +30,7 @@ function SignUp({ child }) {
 
       {child === "registeration" && <Registeration />}
       {child === "registerationform" && <RegisterationForm />}
+      {child === "choosePlan" && <ChoosePlan />}
 
       <AdditionalInfo
         item1="FAQ"

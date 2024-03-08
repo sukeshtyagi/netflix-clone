@@ -3,7 +3,7 @@
   background-color: white;
   width: auto;
   height: fit-content;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 /*styles for additional info comp to be passed as prop*/
