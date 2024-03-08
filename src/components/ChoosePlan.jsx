@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 function ChoosePlan() {
   const navigate = useNavigate();
   const handleButtonClick = () => {
-    navigate("/");
+    navigate("/signup/planform");
   };
 
   return (

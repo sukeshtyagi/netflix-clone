@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-import RegisterationForm from "./components/RegisterationForm";
 
 function App() {
   return (
@@ -19,6 +18,7 @@ function App() {
           element={<SignUp child="registerationform" />}
         />
         <Route path="/signup" element={<SignUp child="choosePlan" />} />
+        <Route path="/signup/planform" element={<SignUp child="planform" />} />
       </Routes>
     </BrowserRouter>
   );
