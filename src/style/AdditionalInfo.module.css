@@ -12,6 +12,7 @@
 }
 .contactPara {
   margin-left: 5vw;
+  margin-bottom: 0;
   font-size: 15px;
   color: rgb(218, 215, 215);
 }
@@ -23,6 +24,7 @@
   justify-content: flex-start;
   align-items: start;
   gap: 10vw;
+  margin: 0;
   margin-left: 3vw;
   padding: 2vw;
 }

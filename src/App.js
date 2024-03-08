@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import RegisterationForm from "./components/RegisterationForm";
 
 function App() {
   return (
@@ -9,7 +10,15 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route
+          path="/registeration"
+          element={<SignUp child="registeration" />}
+        />
+        <Route
+          path="/registeration/form"
+          element={<SignUp child="registerationform" />}
+        />
+        <Route path="/signup" element={<SignUp child="registeration" />} />
       </Routes>
     </BrowserRouter>
   );

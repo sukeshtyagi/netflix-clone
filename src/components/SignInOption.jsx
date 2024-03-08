@@ -20,10 +20,8 @@ function SignInOption({
 
   const handelSignUpClick = () => {
     if (isValidEmail(email)) {
-      setEmail(email);
-      console.log(email);
-
-      navigate("/signup");
+      localStorage.setItem("userEmail", email);
+      navigate("/registeration");
     } else {
       setErrorMsg(true);
     }

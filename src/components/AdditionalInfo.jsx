@@ -19,6 +19,7 @@ function AdditionalInfo({
   item14,
   item15,
   customStyleAdditionalInfoContainer,
+  signupInfoChildDivContainerStyle,
   signupAdditionalInfoContainerStyle,
   signupContactParaStyle,
   signupNavlinkStyle,
@@ -45,7 +46,9 @@ function AdditionalInfo({
       <p className={`${style.contactPara} ${signupContactParaStyle}`}>
         Questions? Call 00-800-919-1964
       </p>
-      <div className={style.infoChildDivContainer}>
+      <div
+        className={`${style.infoChildDivContainer} ${signupInfoChildDivContainerStyle}`}
+      >
         <div className={style.infoChildDiv}>
           <NavLink
             to={`/${item1}`}
