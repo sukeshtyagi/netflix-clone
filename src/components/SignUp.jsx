@@ -21,7 +21,7 @@ function SignUp() {
         }}
       />
       <div className={style.contentDiv}>
-        <img src="icon" className={style.contentDivImg} />
+        <img src="/images/combined.png" className={style.contentDivImg} />
         <p className={style.contentDivPara1}>Step 1 of 3</p>
         <h2 className={style.contentDivHeading}>
           Finishing setting up your account.
@@ -30,9 +30,9 @@ function SignUp() {
           Netflix is personalised for you.
         </p>
         <p className={style.contentDivPara3}>
-          Create a password to watch on any device
+          Create a password to watch on any device at any time.
         </p>
-        <button className={style.contentDivButton}>Click me</button>
+        <button className={style.contentDivButton}>Next</button>
       </div>
       <AdditionalInfo
         item1="FAQ"
