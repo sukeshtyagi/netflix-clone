@@ -18,7 +18,7 @@
   width: 100vw;
   background-color: white;
   margin: 0;
-  margin: 10vh 0 15vh 6vw;
+  margin: 10vh 0 12vh 6vw;
   padding: 0px;
 }
 
@@ -73,6 +73,18 @@
   border-radius: 20px;
 }
 
+.planDetailsBasic {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 100%;
+  padding: 15px;
+  padding-top: 0;
+  border: 2.5px solid darkgray;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .planNamePremium {
   background: linear-gradient(to bottom right, blue, red);
   height: 11vh;
@@ -90,20 +102,18 @@
 }
 
 .planNameBasic {
-  background-color: white;
-  box-sizing: border-box;
-  width: 20vw;
-  height: 100%;
-  padding: 15px;
-  padding-top: 0;
-  border: 2.5px solid darkgray;
+  background: linear-gradient(
+    to bottom right,
+    rgb(6, 6, 202),
+    rgb(73, 193, 234)
+  );
+  height: 11vh;
   border-radius: 20px;
-  border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  margin: 12px 0;
+  padding-left: 15px;
 }
 
-.planName {
+.planNameMobile {
   background: linear-gradient(
     to bottom right,
     rgb(6, 6, 202),
@@ -171,4 +181,51 @@
   background: transparent;
   font-size: 18px;
   font-weight: 600;
+}
+
+.bottomLine1,
+.bottomLine2 {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 88%;
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 55px;
+  color: rgba(52, 50, 50, 0.594);
+}
+
+.bottomLine1 {
+  margin: 5vh 0 0 0;
+}
+
+.bottomLine2 {
+  margin: 0vh 0 0 0;
+}
+.navlink {
+  margin: 0 0.5vw;
+  text-decoration: none;
+  color: rgb(52, 156, 201);
+}
+.navlink:hover {
+  color: rgba(8, 88, 123, 0.914);
+}
+.contentDivButton {
+  box-sizing: border-box;
+  width: 30vw;
+  height: 10vh;
+  font-size: 2em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin: 10vh 0 0 27%;
+  padding: 2vh 1vh;
+  cursor: pointer;
+}
+.contentDivButton:hover {
+  background-color: rgb(221, 48, 48);
+}
+
+.priceElement2 {
 }

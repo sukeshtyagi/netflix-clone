@@ -1,7 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../style/PlanForm.module.css";
+import { NavLink } from "react-router-dom";
 
 function PlanForm() {
+  const [selectPlanPremium, setSelectPlanPremium] = useState(false);
+  const [selectPlanStandard, setSelectPlanStandard] = useState(false);
+  const [selectPlanBasic, setSelectPlanBasic] = useState(false);
+  const [selectPlanMobile, setSelectPlanMobile] = useState(false);
+
+  const handlePlanPremium = () => {
+    setSelectPlanPremium(true);
+    setSelectPlanStandard(false);
+    setSelectPlanBasic(false);
+    setSelectPlanMobile(false);
+
+    const priceElement = document.getElementById("premiumPrice");
+    const priceText = priceElement.textContent.trim();
+    const price = priceText.split(" ")[1];
+    localStorage.setItem("price", price)
+  };
+
+  const handlePlanStandard = () => {
+    setSelectPlanStandard(true);
+
+    setSelectPlanPremium(false);
+    setSelectPlanBasic(false);
+    setSelectPlanMobile(false);
+
+    const priceElement = document.getElementById("standardPrice");
+    const priceText = priceElement.textContent.trim();
+    const price = priceText.split(" ")[1];
+    localStorage.setItem("price", price)
+  };
+
+  const handlePlanBasic = () => {
+    setSelectPlanBasic(true);
+
+    setSelectPlanPremium(false);
+    setSelectPlanStandard(false);
+    setSelectPlanMobile(false);
+
+    const priceElement = document.getElementById("basicPrice");
+    const priceText = priceElement.textContent.trim();
+    const price = priceText.split(" ")[1];
+    localStorage.setItem("price", price)
+  };
+
+  const handlePlanMobile = () => {
+    setSelectPlanMobile(true);
+
+    setSelectPlanPremium(false);
+    setSelectPlanStandard(false);
+    setSelectPlanBasic(false);
+
+    const priceElement = document.getElementById("mobilePrice");
+    const priceText = priceElement.textContent.trim();
+    const price = priceText.split(" ")[1];
+    localStorage.setItem("price", price)
+  };
+
   return (
     <div className={style.formContainer}>
       <div className={style.contentDiv}>
@@ -9,14 +66,17 @@ function PlanForm() {
         <h1 className={style.heading}>Choose plan that's right for you</h1>
         <p className={style.popular}>Most popular</p>
         <div className={style.planContainer}>
-          <div className={style.planDetails}>
+          <div className={style.planDetails} onClick={handlePlanPremium}>
             <div className={style.planNamePremium}>
               <p className={style.normal}>Premium</p>
               <p className={style.quality}>4k+HDR</p>
+              {selectPlanPremium && <input type="checkbox" checked />}
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Monthly Price</p>
-              <p className={style.line2}>Rs 649</p>
+              <p className={style.line2} id="premiumPrice">
+                &#x20B9; 649
+              </p>
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Video and sound quality</p>
@@ -46,14 +106,17 @@ function PlanForm() {
             </div>
           </div>
 
-          <div className={style.planDetails}>
+          <div className={style.planDetails} onClick={handlePlanStandard}>
             <div className={style.planNameStandard}>
               <p className={style.normal}>Standard</p>
               <p className={style.quality}>1080p</p>
+              {selectPlanStandard && <input type="checkbox" checked />}
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Monthly Price</p>
-              <p className={style.line2}>Rs 499</p>
+              <p className={style.line2} id="standardPrice">
+                &#x20B9; 499
+              </p>
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Video and sound quality</p>
@@ -83,14 +146,17 @@ function PlanForm() {
             </div>
           </div>
 
-          <div className={style.planNameBasic}>
-            <div className={style.planName}>
+          <div className={style.planDetailsBasic} onClick={handlePlanBasic}>
+            <div className={style.planNameBasic}>
               <p className={style.normal}>Basic</p>
               <p className={style.quality}>720p</p>
+              {selectPlanBasic && <input type="checkbox" checked />}
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Monthly Price</p>
-              <p className={style.line2}>Rs 199</p>
+              <p className={style.line2} id="basicPrice">
+                &#x20B9; 199
+              </p>
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Video and sound quality</p>
@@ -122,14 +188,17 @@ function PlanForm() {
             </div>
           </div>
 
-          <div className={style.planDetails}>
-            <div className={style.planName}>
+          <div className={style.planDetails} onClick={handlePlanMobile}>
+            <div className={style.planNameMobile}>
               <p className={style.normal}>Mobile</p>
               <p className={style.quality}>480p</p>
+              {selectPlanMobile && <input type="checkbox" checked />}
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Monthly Price</p>
-              <p className={style.line2}>Rs 149</p>
+              <p className={style.line2} id="mobilePrice">
+                &#x20B9; 149
+              </p>
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Video and sound quality</p>
@@ -159,6 +228,18 @@ function PlanForm() {
             </div>
           </div>
         </div>
+        <p className={style.bottomLine1}>
+          Get the best streaming experience with Netflix. Share your account
+          with family members, watch on multiple devices.
+        </p>
+        <p className={style.bottomLine2}>
+          Review our
+          <NavLink className={style.navlink} to="/termsofuse">
+            Terms of Use
+          </NavLink>
+          for more details.
+        </p>
+        <button className={style.contentDivButton}>Next</button>
       </div>
     </div>
   );
