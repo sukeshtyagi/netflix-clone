@@ -227,5 +227,8 @@
   background-color: rgb(221, 48, 48);
 }
 
-.priceElement2 {
+.errorMessage {
+  color: red;
+  font-weight: 600;
+  font-size: 20px;
 }

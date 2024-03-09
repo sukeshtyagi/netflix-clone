@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import style from "../style/PlanForm.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function PlanForm() {
+  const navigate = useNavigate();
+
   const [selectPlanPremium, setSelectPlanPremium] = useState(false);
   const [selectPlanStandard, setSelectPlanStandard] = useState(false);
   const [selectPlanBasic, setSelectPlanBasic] = useState(false);
   const [selectPlanMobile, setSelectPlanMobile] = useState(false);
+  const [amountToPay, setAmountToPay] = useState(null);
+  const [errMsg, setErrMsg] = useState(null);
 
   const handlePlanPremium = () => {
     setSelectPlanPremium(true);
@@ -17,7 +21,7 @@ function PlanForm() {
     const priceElement = document.getElementById("premiumPrice");
     const priceText = priceElement.textContent.trim();
     const price = priceText.split(" ")[1];
-    localStorage.setItem("price", price)
+    setAmountToPay(price);
   };
 
   const handlePlanStandard = () => {
@@ -30,7 +34,7 @@ function PlanForm() {
     const priceElement = document.getElementById("standardPrice");
     const priceText = priceElement.textContent.trim();
     const price = priceText.split(" ")[1];
-    localStorage.setItem("price", price)
+    setAmountToPay(price);
   };
 
   const handlePlanBasic = () => {
@@ -43,7 +47,7 @@ function PlanForm() {
     const priceElement = document.getElementById("basicPrice");
     const priceText = priceElement.textContent.trim();
     const price = priceText.split(" ")[1];
-    localStorage.setItem("price", price)
+    setAmountToPay(price);
   };
 
   const handlePlanMobile = () => {
@@ -56,7 +60,15 @@ function PlanForm() {
     const priceElement = document.getElementById("mobilePrice");
     const priceText = priceElement.textContent.trim();
     const price = priceText.split(" ")[1];
-    localStorage.setItem("price", price)
+    setAmountToPay(price);
+  };
+
+  const handleButtonClick = () => {
+    if (amountToPay !== null) {
+      navigate("/signup/paymentPicket");
+    } else {
+      setErrMsg(true);
+    }
   };
 
   return (
@@ -239,7 +251,10 @@ function PlanForm() {
           </NavLink>
           for more details.
         </p>
-        <button className={style.contentDivButton}>Next</button>
+        <button className={style.contentDivButton} onClick={handleButtonClick}>
+          Next
+        </button>
+        {errMsg && <p className={style.errorMessage}>Select plan to proceed</p>}
       </div>
     </div>
   );
