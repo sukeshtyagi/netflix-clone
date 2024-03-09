@@ -20,8 +20,8 @@ function App() {
         <Route path="/signup" element={<SignUp child="choosePlan" />} />
         <Route path="/signup/planform" element={<SignUp child="planForm" />} />
         <Route
-          path="/signup/paymentPicket"
-          element={<SignUp child="paymentPicket" />}
+          path="/signup/paymentPicker"
+          element={<SignUp child="paymentPicker" />}
         />
       </Routes>
     </BrowserRouter>

@@ -65,7 +65,7 @@ function PlanForm() {
 
   const handleButtonClick = () => {
     if (amountToPay !== null) {
-      navigate("/signup/paymentPicket");
+      navigate("/signup/paymentPicker");
     } else {
       setErrMsg(true);
     }
