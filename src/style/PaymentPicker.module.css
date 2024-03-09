@@ -4,4 +4,35 @@
   max-height: 100vh;
   height: 100vh; /**/
   background-color: white;
+  background-color: orange; /**/
+  padding: 15px; /**/
+}
+.contentDiv {
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin: auto; /**/
+  padding: 15px;
+  background-color: pink; /***/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.step,
+.heading,
+.description,
+.line4,
+.line5,
+.encryption,
+.card,
+.upi,
+.text,
+.icon {
+  margin: 0;
+  padding: 0px;
 }
