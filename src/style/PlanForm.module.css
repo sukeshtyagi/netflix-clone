@@ -2,21 +2,173 @@
   background-color: white;
   box-sizing: border-box;
   max-width: 100vw;
-  max-width: 100vh;
-  width: auto; /**/
-  height: auto; /**/
-  background-color: pink; /**/
-  margin: 0; /**/
-  padding: 2vh 2vw; /**/
+  max-height: fit-content;
+  width: 100vw;
+  height: fit-content;
+  background-color: white;
+  margin: 0;
+  margin-bottom: 0vh;
+  padding: 2vh 2vw;
 }
+
 .contentDiv {
   box-sizing: border-box;
   max-width: 100vw;
-  max-width: 100vh;
-  width: auto; /**/
-  height: auto; /**/
-  background-color: rgb(179, 125, 134); /**/
-  margin: 0; /**/
-  padding: 0; /**/
+  max-height: 100%;
+  width: 100vw;
+  background-color: white;
+  margin: 0;
+  margin: 10vh 0 15vh 6vw;
+  padding: 0px;
 }
 
+.step {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.heading {
+  margin: 1vh 0;
+  padding: 0;
+  padding-left: 15px;
+}
+
+.popular {
+  background-color: rgb(91, 166, 217);
+  color: white;
+  width: 19vw;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 3vh;
+  margin-left: 45%;
+  padding: 5px 0;
+  padding-left: 15px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.planContainer {
+  box-sizing: border-box;
+  max-width: 100vw;
+  max-height: 100%;
+  width: 100vw;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  display: flex;
+  gap: 2vw;
+}
+
+.planDetails {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 100%;
+  padding: 15px;
+  padding-top: 0;
+  border: 2.5px solid darkgray;
+  border-radius: 20px;
+}
+
+.planNamePremium {
+  background: linear-gradient(to bottom right, blue, red);
+  height: 11vh;
+  border-radius: 20px;
+  margin: 12px 0;
+  padding-left: 15px;
+}
+
+.planNameStandard {
+  background: linear-gradient(to bottom right, blue, rgb(248, 0, 248));
+  height: 11vh;
+  border-radius: 20px;
+  margin: 12px 0;
+  padding-left: 15px;
+}
+
+.planNameBasic {
+  background-color: white;
+  box-sizing: border-box;
+  width: 20vw;
+  height: 100%;
+  padding: 15px;
+  padding-top: 0;
+  border: 2.5px solid darkgray;
+  border-radius: 20px;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.planName {
+  background: linear-gradient(
+    to bottom right,
+    rgb(6, 6, 202),
+    rgb(73, 193, 234)
+  );
+  height: 11vh;
+  border-radius: 20px;
+  margin: 12px 0;
+  padding-left: 15px;
+}
+
+.normal {
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.quality {
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.detail {
+  background: transparent;
+  height: 12vh;
+  margin: 12px 0;
+  padding-left: 15px;
+  border-bottom: 1px solid darkgray;
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.downloadDetail {
+  background: transparent;
+  height: 12vh;
+  margin: 12px 0;
+  padding-left: 15px;
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line1 {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.line2 {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 600;
+}
