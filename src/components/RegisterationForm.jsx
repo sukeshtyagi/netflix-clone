@@ -22,6 +22,8 @@ function RegisterationForm() {
     return passwordRegex.test(password);
   };
 
+  console.log(userEmail);
+
   return (
     <div className={style.formContainer}>
       <div className={style.contentDiv}>
@@ -32,10 +34,7 @@ function RegisterationForm() {
           Enter your password and Pou'll be watching in no time.
         </p>
         <p className={style.emailLabel}>Email</p>
-        {/*update this conditional rendering*/}
-        {userEmail && (
-          <p className={style.userEmail}>/*Get email from local storage*/</p>
-        )}
+        {userEmail && <p className={style.userEmail}>{userEmail}</p>}
         <input
           type="password"
           value={password}
@@ -47,10 +46,10 @@ function RegisterationForm() {
         />
         {errorMessage && (
           <>
-            <p className={style.errorMessage3}>
+            <p className={style.errorMessage1}>
               Password must be at least 6 characters long
             </p>
-            <p className={style.errorMessage3}>
+            <p className={style.errorMessage}>
               Must include lowercase, uppercase.
             </p>
             <p className={style.errorMessage3}>

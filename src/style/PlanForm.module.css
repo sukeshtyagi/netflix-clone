@@ -1,0 +1,22 @@
+.formContainer {
+  background-color: white;
+  box-sizing: border-box;
+  max-width: 100vw;
+  max-width: 100vh;
+  width: auto; /**/
+  height: auto; /**/
+  background-color: pink; /**/
+  margin: 0; /**/
+  padding: 2vh 2vw; /**/
+}
+.contentDiv {
+  box-sizing: border-box;
+  max-width: 100vw;
+  max-width: 100vh;
+  width: auto; /**/
+  height: auto; /**/
+  background-color: rgb(179, 125, 134); /**/
+  margin: 0; /**/
+  padding: 0; /**/
+}
+

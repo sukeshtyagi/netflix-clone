@@ -60,7 +60,8 @@ p {
 
 .userEmail {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 2vh;
+  color: #000;
 }
 
 .inputPassword {
@@ -94,9 +95,27 @@ p {
   margin: 2vh 0 0 0;
   padding: 2vh 1vh;
 }
+.errorMessage1 {
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 1vh;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.errorMessage2 {
+  box-sizing: border-box;
+  margin:  0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
 .errorMessage3 {
   box-sizing: border-box;
   margin: 0;
+  margin-bottom: 0vh;
   padding: 0;
   max-width: 100%;
   height: auto;
