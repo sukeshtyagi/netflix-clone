@@ -4,13 +4,13 @@
   max-height: 100vh;
   height: 100vh;
   background-color: white;
-  padding: 15px; 
+  padding: 15px;
 }
 .contentDiv {
   box-sizing: border-box;
   max-width: 100%;
   max-height: 100%;
-  width: 50vw; 
+  width: 50vw;
   height: auto;
   background-color: white;
   border: 3px solid black;
@@ -42,7 +42,7 @@
   font-size: 1.5em;
   font-weight: 100;
   font-family: sans-serif;
-  margin-bottom: 1vh; 
+  margin-bottom: 1vh;
 }
 
 .heading {
@@ -106,6 +106,7 @@
   border: 2px solid darkgray;
   padding: 1vh 1vw;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .text2 {
@@ -128,6 +129,7 @@
   border: 2px solid darkgray;
   padding: 0vh 1vw;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .text3 {
