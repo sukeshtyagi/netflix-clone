@@ -10,6 +10,7 @@ function PlanForm() {
   const [selectPlanBasic, setSelectPlanBasic] = useState(false);
   const [selectPlanMobile, setSelectPlanMobile] = useState(false);
   const [amountToPay, setAmountToPay] = useState(null);
+  const [plan, setPlan] = useState(null);
   const [errMsg, setErrMsg] = useState(null);
 
   const handlePlanPremium = () => {
@@ -22,6 +23,7 @@ function PlanForm() {
     const priceText = priceElement.textContent.trim();
     const price = priceText.split(" ")[1];
     setAmountToPay(price);
+    setPlan("Premium");
   };
 
   const handlePlanStandard = () => {
@@ -35,6 +37,7 @@ function PlanForm() {
     const priceText = priceElement.textContent.trim();
     const price = priceText.split(" ")[1];
     setAmountToPay(price);
+    setPlan("Standard");
   };
 
   const handlePlanBasic = () => {
@@ -48,6 +51,7 @@ function PlanForm() {
     const priceText = priceElement.textContent.trim();
     const price = priceText.split(" ")[1];
     setAmountToPay(price);
+    setPlan("Basic");
   };
 
   const handlePlanMobile = () => {
@@ -61,10 +65,13 @@ function PlanForm() {
     const priceText = priceElement.textContent.trim();
     const price = priceText.split(" ")[1];
     setAmountToPay(price);
+    setPlan("Mobile");
   };
 
   const handleButtonClick = () => {
     if (amountToPay !== null) {
+      localStorage.setItem("price",amountToPay)
+      localStorage.setItem("plan",plan)
       navigate("/signup/paymentPicker");
     } else {
       setErrMsg(true);

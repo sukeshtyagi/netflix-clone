@@ -7,6 +7,8 @@ import RegisterationForm from "./RegisterationForm";
 import ChoosePlan from "./ChoosePlan";
 import PlanForm from "./PlanForm";
 import PaymentPicker from "./PaymentPicker";
+import CreditOption from "./CreditOption";
+import UpiOption from "./UpiOption";
 
 function SignUp({ child }) {
   return (
@@ -34,7 +36,9 @@ function SignUp({ child }) {
       {child === "registerationform" && <RegisterationForm />}
       {child === "choosePlan" && <ChoosePlan />}
       {child === "planForm" && <PlanForm />}
-      {child === "paymentPicker" && <PaymentPicker/> }
+      {child === "paymentPicker" && <PaymentPicker />}
+      {child === "creditOption" && <CreditOption />}
+      {child === "upiOption" && <UpiOption />}
 
       <AdditionalInfo
         item1="FAQ"

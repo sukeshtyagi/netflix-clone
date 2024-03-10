@@ -23,6 +23,15 @@ function App() {
           path="/signup/paymentPicker"
           element={<SignUp child="paymentPicker" />}
         />
+
+        <Route
+          path="/signup/creditoption"
+          element={<SignUp child="creditOption" />}
+        />
+        <Route
+          path="/signup/upiOption"
+          element={<SignUp child="upiOption" />}
+        />
       </Routes>
     </BrowserRouter>
   );
