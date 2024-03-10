@@ -9,6 +9,7 @@ import PlanForm from "./PlanForm";
 import PaymentPicker from "./PaymentPicker";
 import CreditOption from "./CreditOption";
 import UpiOption from "./UpiOption";
+import UpiOrderConfirm from "./UpiOrderConfirm";
 
 function SignUp({ child }) {
   return (
@@ -39,6 +40,7 @@ function SignUp({ child }) {
       {child === "paymentPicker" && <PaymentPicker />}
       {child === "creditOption" && <CreditOption />}
       {child === "upiOption" && <UpiOption />}
+      {child === "upiorderconfirm" && <UpiOrderConfirm/>}
 
       <AdditionalInfo
         item1="FAQ"

@@ -14,6 +14,7 @@ function CreditOption2({ upiComponent, upiImageStyle, upiInfoStyle }) {
 
   const handleUpiIdChange = (event) => {
     setUpiId(event.target.value);
+    localStorage.setItem('UPI ID', upiId)
   };
 
   const handleClick = () => {
@@ -88,7 +89,6 @@ function CreditOption2({ upiComponent, upiImageStyle, upiInfoStyle }) {
             <button
               onClick={handleClick}
               className={style.contentDivButton}
-              style={{ marginTop: "5vh" }}
             >
               Next
             </button>
