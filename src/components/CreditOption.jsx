@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../style/CreditOption.module.css";
 import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
-
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function CreditOption() {
+  const navigate = useNavigate();
+
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const price = localStorage.getItem("price");
   const plan = localStorage.getItem("plan");
 
+  const handleClick = () => {
+    setIsButtonDisabled(true);
+    setTimeout(() => {
+      navigate("/home");
+    }, 1000);
+  };
   return (
     <div className={style.paymentContainer}>
       <div className={style.contentDiv}>
@@ -56,7 +64,9 @@ function CreditOption() {
               <p className={style.cost}>&#x20B9; {price}/month</p>
               <p className={style.planName}>{plan}</p>
             </div>
-            <NavLink className={style.navlinkChangePlan}>Change</NavLink>
+            <NavLink to="/signup/planform" className={style.navlinkChangePlan}>
+              Change
+            </NavLink>
           </div>
           <p className={style.info1}>
             Any payment above &#x20B9; 2000 shall need additional
@@ -72,7 +82,17 @@ function CreditOption() {
             /month) to your payment method untill you cancel.You may cancel at
             any time to avoid future charges.
           </p>
-          <button className={style.contentDivButton}>Start Membership</button>
+          {!isButtonDisabled && (
+            <button onClick={handleClick} className={style.contentDivButton}>
+              Start Membership
+            </button>
+          )}
+          {isButtonDisabled && (
+            <button onClick={handleClick} className={style.contentDivButton}>
+              Processing payment
+            </button>
+          )}
+
           <p className={style.captcha}>
             This page is protected by google reCAPTCHA to ensure you're not a
             bot.
