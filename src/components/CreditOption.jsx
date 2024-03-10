@@ -9,14 +9,20 @@ function CreditOption() {
   const navigate = useNavigate();
 
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const [error, setError] = useState(false);
   const price = localStorage.getItem("price");
   const plan = localStorage.getItem("plan");
 
   const handleClick = () => {
-    setIsButtonDisabled(true);
-    setTimeout(() => {
-      navigate("/home");
-    }, 1000);
+    const agreementCheckbox = document.getElementById("agreementCheckbox");
+    if (agreementCheckbox.checked) {
+      setIsButtonDisabled(true);
+      setTimeout(() => {
+        navigate("/home");
+      }, 1000);
+    } else {
+      setError(true);
+    }
   };
   return (
     <div className={style.paymentContainer}>
@@ -82,6 +88,19 @@ function CreditOption() {
             /month) to your payment method untill you cancel.You may cancel at
             any time to avoid future charges.
           </p>
+
+          <div className={style.checkboxContainer}>
+            <input type="checkbox" id="agreementCheckbox" />
+            <label htmlFor="agreementCheckbox" className={style.checkboxLabel}>
+              I agree
+            </label>
+          </div>
+
+          {error && (
+            <p className={style.errorMsg}>
+              Click I agree to continue to payment.
+            </p>
+          )}
           {!isButtonDisabled && (
             <button onClick={handleClick} className={style.contentDivButton}>
               Start Membership

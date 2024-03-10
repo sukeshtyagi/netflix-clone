@@ -1,7 +1,7 @@
 .paymentContainer {
   box-sizing: border-box;
   max-width: 100vw;
-  max-height: fit-content;
+  max-height: 110vw;
   margin: 0;
   padding: 15px;
 }
@@ -9,7 +9,7 @@
 .contentDiv {
   box-sizing: border-box;
   max-width: 100vw;
-  max-height: fit-content;
+  max-height: 110vw;
   width: 50vw;
   height: auto;
   margin: auto;
@@ -133,7 +133,7 @@ span {
 .cvvDate {
   box-sizing: border-box;
   max-width: 100%;
-  width: 80%; 
+  width: 80%;
   height: 4vh;
   padding: 10px;
   font-size: 18px;
@@ -275,4 +275,12 @@ span {
   padding: 0 0px 0 0;
   font-size: 0.9em;
   text-decoration: none;
+}
+
+.errorMsg {
+  font-size: 1em;
+  color: red;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3vh;
 }
