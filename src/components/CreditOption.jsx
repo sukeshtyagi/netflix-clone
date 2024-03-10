@@ -24,18 +24,22 @@ function CreditOption() {
       setError(true);
     }
   };
+
   return (
     <div className={style.paymentContainer}>
       <div className={style.contentDiv}>
         <p className={style.step}>
           Step <span>3</span> of <span>3</span>
         </p>
+
         <h1 className={style.heading}>Set up your credit or debit card</h1>
+
         <img
           src="/images/card.png"
           alt="Cards we accept"
           className={style.cardImage}
         />
+
         <div className={style.cardDetailContainer}>
           <div className={style.cardNumberDiv}>
             <input

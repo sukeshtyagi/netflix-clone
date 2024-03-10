@@ -32,6 +32,10 @@ function App() {
           path="/signup/upiOption"
           element={<SignUp child="upiOption" />}
         />
+        <Route
+          path="/signup/upiorderconfirm/"
+          element={<SignUp child="upiorderconfirm" />}
+        />
       </Routes>
     </BrowserRouter>
   );

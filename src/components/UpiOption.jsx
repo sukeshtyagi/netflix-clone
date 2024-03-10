@@ -1,12 +1,14 @@
 import React from "react";
 import style from "../style/UpiOption.module.css";
+import CreditOption2 from "./CreditOption2";
 
 function UpiOption() {
   return (
-    <div className={style.paymentContainer}>
-      <p className={style.step}>Step 3 of 3</p>
-      <h1 className={style.heading}></h1>
-    </div>
+    <CreditOption2
+      upiComponent="UPI "
+      upiImageStyle={style.upiImage}
+      upiInfoStyle={style.upiInfo}
+    />
   );
 }
 

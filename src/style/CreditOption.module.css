@@ -27,6 +27,7 @@
   width: 50%;
   margin: 0;
   font-weight: 100;
+  color: #000;
 }
 
 span {
@@ -75,6 +76,7 @@ span {
 
 .cardNumber {
   box-sizing: border-box;
+  background-color: white;
   max-width: 100%;
   width: 90%;
   height: 100%;
@@ -107,8 +109,8 @@ span {
 .expiryDate {
   box-sizing: border-box;
   max-width: 100%;
-  width: 90%;
-  height: 6vh; /**/
+  width: 100%;
+  height: 6vh;
   padding: 10px;
   font-size: 18px;
   margin: 0;
