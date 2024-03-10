@@ -16,18 +16,18 @@ function PaymentPicker() {
         <p className={style.line4}>Secure for peace of mind.</p>
         <p className={style.line5}>Cancel easy online.</p>
         <div className={style.encryption}>
-          <p className={style.text}>End-to-end encrypted</p>
-          <FontAwesomeIcon icon={faLock} className={style.icon} />
+          <p className={style.text1}>End-to-end encrypted</p>
+          <FontAwesomeIcon icon={faLock} className={style.lockIcon} />
         </div>
 
         <div className={style.card}>
-          <p className={style.text}>Credit or Debit Card</p>
-          <FontAwesomeIcon icon={faArrowRight} className={style.icon} />
+          <p className={style.text2}>Credit or Debit Card</p>
+          <FontAwesomeIcon icon={faArrowRight} className={style.arrowIcon} />
         </div>
 
         <div className={style.upi}>
-          <p className={style.text}>UPI Autopay</p>
-          <FontAwesomeIcon icon={faArrowRight} className={style.icon} />
+          <p className={style.text3}>UPI Autopay</p>
+          <FontAwesomeIcon icon={faArrowRight} className={style.arrowIcon} />
         </div>
       </div>
     </div>
