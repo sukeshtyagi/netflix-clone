@@ -13,8 +13,9 @@ function CreditOption2({ upiComponent, upiImageStyle, upiInfoStyle }) {
   };
 
   const handleUpiIdChange = (event) => {
-    setUpiId(event.target.value);
-    localStorage.setItem('UPI ID', upiId)
+    const newUpiId = event.target.value;
+    setUpiId(newUpiId);
+    localStorage.setItem("UPI ID", newUpiId);
   };
 
   const handleClick = () => {
@@ -22,7 +23,7 @@ function CreditOption2({ upiComponent, upiImageStyle, upiInfoStyle }) {
       setError(true);
     } else {
       setError(false);
-      navigate('/signup/upiorderconfirm/')
+      navigate("/signup/upiorderconfirm/");
     }
   };
 
@@ -86,10 +87,7 @@ function CreditOption2({ upiComponent, upiImageStyle, upiInfoStyle }) {
               <p className={style.errorMsg}>Fill in the details to continue.</p>
             )}
 
-            <button
-              onClick={handleClick}
-              className={style.contentDivButton}
-            >
+            <button onClick={handleClick} className={style.contentDivButton}>
               Next
             </button>
           </div>

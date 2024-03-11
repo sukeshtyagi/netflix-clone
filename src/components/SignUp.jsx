@@ -40,7 +40,7 @@ function SignUp({ child }) {
       {child === "paymentPicker" && <PaymentPicker />}
       {child === "creditOption" && <CreditOption />}
       {child === "upiOption" && <UpiOption />}
-      {child === "upiorderconfirm" && <UpiOrderConfirm/>}
+      {child === "upiorderconfirm" && <UpiOrderConfirm />}
 
       <AdditionalInfo
         item1="FAQ"
@@ -62,22 +62,3 @@ function SignUp({ child }) {
 }
 
 export default SignUp;
-
-/*
-      <div className={style.contentDiv}>
-        <img src="/images/combined.png" className={style.contentDivImg} />
-        <p className={style.contentDivPara1}>Step 1 of 3</p>
-        <h2 className={style.contentDivHeading}>
-          Finishing setting up your account.
-        </h2>
-        <p className={style.contentDivPara2}>
-          Netflix is personalised for you.
-        </p>
-        <p className={style.contentDivPara3}>
-          Create a password to watch on any device at any time.
-        </p>
-        <button className={style.contentDivButton} onClick={handleButtonClick}>
-          Next
-        </button>
-      </div>
-*/

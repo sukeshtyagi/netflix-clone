@@ -10,7 +10,9 @@ function LogoHeader({
   customStyleOptionDiv,
   customStyleButton,
 }) {
+  const userEmail = localStorage.getItem("userEmail");
   const navigate = useNavigate();
+
   const hindiIcon = <span className={style.icon}>🇮🇳</span>;
   const englishIcon = <span className={style.icon}>🇺🇸</span>;
 
@@ -24,7 +26,7 @@ function LogoHeader({
         NETFLIX
       </p>
 
-      {!login && !signup && (
+      {!login && !signup && !userEmail && (
         <div className={style.optionDiv}>
           <select className={style.dropdown}>
             <option value="option2">{hindiIcon} Hindi</option>
@@ -36,14 +38,26 @@ function LogoHeader({
         </div>
       )}
 
-      {signup && (
+      {!login && !signup && userEmail && (
+        <div className={style.optionDiv}>
+          <select className={style.dropdown}>
+            <option value="option2">{hindiIcon} Hindi</option>
+            <option value="option1">{englishIcon} English</option>
+          </select>
+          <button onClick={() => navigate("/login")} className={style.button}>
+            Sign Out
+          </button>
+        </div>
+      )}
+
+      {signup && userEmail && (
         <div className={style.optionDiv} style={customStyleOptionDiv}>
           <button
             onClick={() => navigate("/login")}
             className={style.button}
             style={customStyleButton}
           >
-            Sign In
+            Sign Out
           </button>
         </div>
       )}
