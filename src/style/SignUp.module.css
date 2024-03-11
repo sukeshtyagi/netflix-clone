@@ -8,10 +8,9 @@
 }
 /*styles for additional info comp to be passed as prop*/
 .additionalInfoContainer {
-  margin-top: vh; /*reduced to 0*/
+  margin-top: 0vh; /*reduced to 0*/
   border-top: 5px solid darkgrey;
   background-color: rgb(241, 240, 240);
-  margin-top: 22vh;
   gap: 1vh;
 }
 .contactPara {
