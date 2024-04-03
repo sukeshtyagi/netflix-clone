@@ -1,46 +1,68 @@
 .logoContainer {
-  width: 100vw;
+  box-sizing: border-box;
   max-width: 100vw;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 2vh;
+  padding: 0;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
   border: none;
-  box-sizing: border-box;
-  padding: 0;
 }
 .logo {
+  box-sizing: border-box;
   background-color: transparent;
   color: firebrick;
   font-weight: 900;
-  font-size: 3em;
-  margin-left: 15vw; /*cstyle*/
+  font-size: 1.5em;
+  margin: 0;
+  margin-left: 015vw; /*cstyle*/
   cursor: pointer;
 }
+
+.headerButton {
+  visibility: visible;
+}
+
+.icon {
+  font-size: 1.5em;
+  margin-left: 200%;
+  color: white;
+}
+
 .optionDiv {
+  visibility: hidden;
+  box-sizing: border-box;
   background-color: transparent;
+  padding: 2px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
-  margin-right: 15vw; /*cstyle*/
+  gap: 10px; /**/
+  margin-right: 0; /*cstyle*/
 }
 .dropdown {
+  box-sizing: border-box;
+  width: auto;
   background-color: black;
   color: white;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 0.65em;
+  font-weight: 900;
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
 }
 .button {
+  box-sizing: border-box;
+  width: 40%;
   background-color: rgb(214, 30, 30);
   color: white;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 600;
-  padding: 5px 10px;
+  padding: 5px;
   border: none;
   border-radius: 5px;
   transition: background-color 2s ease;
@@ -50,4 +72,64 @@
 .button:hover {
   background-color: rgb(87, 3, 3);
   color: rgb(15, 245, 138);
+}
+
+@media screen and (min-width: 260px) {
+  .logoContainer {
+    font-size: 0.8em;
+    margin-left: 1vw;
+  }
+
+  .logo {
+    margin-left: 1vw;
+    font-size: 1.5em;
+  }
+
+  .headerButton {
+    display: none;
+  }
+
+  .optionDiv {
+    visibility: visible;
+    margin-right: 0;
+  }
+
+  .dropdown {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .logoContainer {
+    margin-top: 2vh;
+  }
+
+  .logo {
+    font-size: 2em;
+  }
+
+  .optionDiv {
+    gap: 15px;
+  }
+
+  .dropdown {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .button {
+    width: 80%;
+    margin-right: 0vh;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .logoContainer {
+    width: 80%;
+    margin-left: auto;
+  }
+
+  .logo {
+    margin-left: 0vw;
+  }
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import style from "../style/LogoHeader.module.css";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 
 function LogoHeader({
   login,
@@ -27,15 +29,20 @@ function LogoHeader({
       </p>
 
       {!login && !signup && !userEmail && (
-        <div className={style.optionDiv}>
-          <select className={style.dropdown}>
-            <option value="option2">{hindiIcon} Hindi</option>
-            <option value="option1">{englishIcon} English</option>
-          </select>
-          <button onClick={() => navigate("/login")} className={style.button}>
-            Sign In
-          </button>
-        </div>
+        <>
+          <div className={style.headerButton}>
+            <FontAwesomeIcon icon={faEllipsis} className={style.icon}/>
+          </div>
+          <div className={style.optionDiv}>
+            <select className={style.dropdown}>
+              <option value="option2">{hindiIcon} Hindi</option>
+              <option value="option1">{englishIcon} English</option>
+            </select>
+            <button onClick={() => navigate("/login")} className={style.button}>
+              Sign In
+            </button>
+          </div>
+        </>
       )}
 
       {!login && !signup && userEmail && (

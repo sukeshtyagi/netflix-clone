@@ -2,12 +2,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import LogoHeader from "./components/LogoHeader";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<LogoHeader />} />
         <Route path="/login" element={<Login />} />
         <Route
           path="/registeration"
