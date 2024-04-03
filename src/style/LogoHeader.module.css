@@ -12,6 +12,7 @@
   background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
   border: none;
 }
+
 .logo {
   box-sizing: border-box;
   background-color: transparent;
@@ -44,6 +45,7 @@
   gap: 10px; /**/
   margin-right: 0; /*cstyle*/
 }
+
 .dropdown {
   box-sizing: border-box;
   width: auto;
@@ -55,6 +57,7 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
 .button {
   box-sizing: border-box;
   width: 40%;
@@ -69,15 +72,25 @@
   transition: color 2s ease;
   cursor: pointer;
 }
+
 .button:hover {
   background-color: rgb(87, 3, 3);
   color: rgb(15, 245, 138);
 }
 
-@media screen and (min-width: 260px) {
+@media screen and (min-width: 60px) and (max-width: 2600px) {
   .logoContainer {
     font-size: 0.8em;
     margin-left: 1vw;
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 260px) and (max-width: 450px) {
+  .logoContainer {
+    font-size: 0.8em;
+    margin-left: 1vw;
+    justify-content: space-evenly;
   }
 
   .logo {
@@ -97,18 +110,30 @@
   .dropdown {
     font-size: 0.8em;
   }
+
+  .button {
+    width: 100%;
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 450px) {
   .logoContainer {
     margin-top: 2vh;
+    justify-content: space-between;
   }
 
   .logo {
     font-size: 2em;
   }
 
+  .headerButton {
+    display: none;
+  }
+
   .optionDiv {
+    visibility: visible;
+    margin-right: 0;
     gap: 15px;
   }
 
