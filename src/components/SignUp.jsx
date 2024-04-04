@@ -19,17 +19,20 @@ function SignUp({ child }) {
         customStyleLogoContainer={{
           background: "white",
           borderBottom: "5px solid darkgrey",
+          width: "100%",
+          fontSize: "1.5em",
         }}
         logoCustomStyle={{
           margin: "3vh",
           marginLeft: "6vw",
-          fontSize: "2em",
+          fontSize: "1em",
         }}
         customStyleOptionDiv={{ marginRight: "5vw" }}
         customStyleButton={{
           backgroundColor: "white",
+          width: "auto",
           color: "black",
-          fontSize: "1em",
+          fontSize: "0.8em",
         }}
       />
 
@@ -50,6 +53,7 @@ function SignUp({ child }) {
         item9="Netflix Shop"
         item10="Corporate Information"
         item13="Terms of Use"
+        
         signupAdditionalInfoContainerStyle={style.additionalInfoContainer}
         signupInfoChildDivContainerStyle={style.infoChildDivContainer}
         signupContactParaStyle={style.contactPara}

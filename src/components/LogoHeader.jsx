@@ -2,7 +2,7 @@ import React from "react";
 import style from "../style/LogoHeader.module.css";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
 
 function LogoHeader({
   login,
@@ -31,7 +31,7 @@ function LogoHeader({
       {!login && !signup && !userEmail && (
         <>
           <div className={style.headerButton}>
-            <FontAwesomeIcon icon={faEllipsis} className={style.icon} />
+            <FontAwesomeIcon icon={faEllipsisH} className={style.icon} />
           </div>
           <div className={style.optionDiv}>
             <select className={style.dropdown}>
@@ -54,6 +54,7 @@ function LogoHeader({
           <button
             onClick={() => {
               navigate("/login");
+              localStorage.removeItem("userEmail");
             }}
             className={style.button}
           >
@@ -63,19 +64,39 @@ function LogoHeader({
       )}
 
       {signup && userEmail && (
-        <div className={style.optionDiv} style={customStyleOptionDiv}>
-          <button
-            onClick={() => {
-              localStorage.removeItem("userEmail");
-              navigate("/login");
-              console.log("button executed");
-            }}
-            className={style.button}
-            style={customStyleButton}
-          >
-            Sign Out
-          </button>
-        </div>
+        <>
+          <div className={style.headerButton}>
+            <p
+              style={{
+                fontSize: ".8em",
+                width: "100px",
+                height:"auto",
+                color:"black",
+                margin: "0",
+                wordWrap: "break-word",
+              }}
+              onClick={() => {
+                localStorage.removeItem("userEmail");
+                navigate("/login");
+              }}
+            >
+              Sign Out
+            </p>
+          </div>
+          <div className={style.optionDiv} style={customStyleOptionDiv}>
+            <button
+              onClick={() => {
+                localStorage.removeItem("userEmail");
+                navigate("/login");
+                console.log("button executed");
+              }}
+              className={style.button}
+              style={customStyleButton}
+            >
+              Sign Out
+            </button>
+          </div>
+        </>
       )}
     </div>
   );

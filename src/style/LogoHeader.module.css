@@ -25,13 +25,13 @@
 }
 
 .headerButton {
-  visibility: visible;
+  display: inline-block;
 }
 
 .icon {
-  font-size: 1.5em;
-  margin-left: 200%;
-  color: white;
+  font-size: 2.5em;
+  margin-right: 15px;
+  color: rgb(25, 234, 25);
 }
 
 .optionDiv {
@@ -78,11 +78,15 @@
   color: rgb(15, 245, 138);
 }
 
-@media screen and (min-width: 60px) and (max-width: 260px) {
+@media screen and (max-width: 260px) {
   .logoContainer {
     font-size: 0.8em;
     margin-left: 1vw;
-    justify-content: start;
+    gap: 35px;
+  }
+
+  .headerButton {
+    display: inline-block;
   }
 }
 
@@ -95,7 +99,7 @@
 
   .logo {
     margin-left: 1vw;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .headerButton {
@@ -113,7 +117,7 @@
 
   .button {
     width: 100%;
-    font-size: 1em;
+    font-size:1em;
   }
 }
 
@@ -151,6 +155,7 @@
   .logoContainer {
     width: 80%;
     margin-left: auto;
+    justify-content: space-between;
   }
 
   .logo {
