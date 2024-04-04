@@ -29,7 +29,7 @@ function SignUp({ child }) {
         customStyleButton={{
           backgroundColor: "white",
           color: "black",
-          fontSize: "1.5em",
+          fontSize: "1em",
         }}
       />
 

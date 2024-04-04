@@ -31,7 +31,7 @@ function LogoHeader({
       {!login && !signup && !userEmail && (
         <>
           <div className={style.headerButton}>
-            <FontAwesomeIcon icon={faEllipsis} className={style.icon}/>
+            <FontAwesomeIcon icon={faEllipsis} className={style.icon} />
           </div>
           <div className={style.optionDiv}>
             <select className={style.dropdown}>
@@ -51,7 +51,12 @@ function LogoHeader({
             <option value="option2">{hindiIcon} Hindi</option>
             <option value="option1">{englishIcon} English</option>
           </select>
-          <button onClick={() => navigate("/login")} className={style.button}>
+          <button
+            onClick={() => {
+              navigate("/login");
+            }}
+            className={style.button}
+          >
             Sign Out
           </button>
         </div>
@@ -60,7 +65,11 @@ function LogoHeader({
       {signup && userEmail && (
         <div className={style.optionDiv} style={customStyleOptionDiv}>
           <button
-            onClick={() => navigate("/login")}
+            onClick={() => {
+              localStorage.removeItem("userEmail");
+              navigate("/login");
+              console.log("button executed");
+            }}
             className={style.button}
             style={customStyleButton}
           >
