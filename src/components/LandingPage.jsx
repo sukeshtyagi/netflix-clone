@@ -19,7 +19,6 @@ function LandingPage() {
       <div className={style.reasonsDiv}>
         <p>More reasons to join</p>
         <div className={style.reasonsChildDivContainer}>
-          
           <div className={style.reasonsChildDiv}>
             <h2>Stories tailored to your taste</h2>
             <img
@@ -37,7 +36,7 @@ function LandingPage() {
               className={style.reasonsImage2}
             />
           </div>
-         
+
           <div className={style.reasonsChildDiv}>
             <h2>A place just for kids</h2>
             <img
@@ -46,7 +45,7 @@ function LandingPage() {
               className={style.reasonsImage3}
             />
           </div>
-         
+
           <div className={style.reasonsChildDiv}>
             <h2>For your phone, laptop, tablet and TV</h2>
             <img
@@ -57,12 +56,11 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      
+
       <div className={style.faqContainer}>
         <p className={style.faqHeading}>Frequently Asked Questions</p>
-        
+
         <div className={style.faqChildDivContainer}>
-         
           <div className={style.faqChildDiv}>
             <p>What is Netflix?</p>
             <FontAwesomeIcon icon={faPlus} className={style.plusIcon} />
@@ -95,35 +93,24 @@ function LandingPage() {
         </div>
       </div>
 
-
       <SignInOption
         customStylesBodyDiv={{
           backgroundColor: "black",
           marginTop: 0,
           marginBottom: 0,
           paddingBottom: 0,
-          height: "30vh",
+          height: "20vh" /* */,
         }}
         customStylesBodyDivPara={{
-          textAlign: "left",
-          marginLeft: "7vw",
-          marginTop: "8vh",
+          marginTop: "15px",
         }}
         customStylesGetStartedDiv={{
-          justifyContent: "flex-start",
-          marginLeft: "6vw",
-          marginTop: "2vh",
-        }}
-        customStylesInput={{
-          width: "40vw",
-          marginLeft: "0",
-        }}
-        customStylesButton={{
-          width: "20vw",
+          padding:"0",
         }}
       />
+
       <div className={style.segregate}></div>
-      
+
       <AdditionalInfo
         item1="FAQ"
         item2="Investor Relations"

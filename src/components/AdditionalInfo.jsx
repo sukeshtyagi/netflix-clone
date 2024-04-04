@@ -46,6 +46,7 @@ function AdditionalInfo({
       <p className={`${style.contactPara} ${signupContactParaStyle}`}>
         Questions? Call 00-800-919-1964
       </p>
+      
       <div
         className={`${style.infoChildDivContainer} ${signupInfoChildDivContainerStyle}`}
       >
@@ -148,6 +149,7 @@ function AdditionalInfo({
           </NavLink>
         </div>
       </div>
+
       <div className={`${style.dropdownContainer} ${signupDropdownStyle}`}>
         <select
           className={style.dropdown}
