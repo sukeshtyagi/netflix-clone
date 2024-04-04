@@ -19,6 +19,7 @@ function LandingPage() {
       <div className={style.reasonsDiv}>
         <p>More reasons to join</p>
         <div className={style.reasonsChildDivContainer}>
+          
           <div className={style.reasonsChildDiv}>
             <h2>Stories tailored to your taste</h2>
             <img
@@ -27,6 +28,7 @@ function LandingPage() {
               className={style.reasonsImage1}
             />
           </div>
+
           <div className={style.reasonsChildDiv}>
             <h2>Cancel or switch plans anytime</h2>
             <img
@@ -35,6 +37,7 @@ function LandingPage() {
               className={style.reasonsImage2}
             />
           </div>
+         
           <div className={style.reasonsChildDiv}>
             <h2>A place just for kids</h2>
             <img
@@ -43,8 +46,9 @@ function LandingPage() {
               className={style.reasonsImage3}
             />
           </div>
+         
           <div className={style.reasonsChildDiv}>
-            <h2>For your phone,laptop,tablet and TV</h2>
+            <h2>For your phone, laptop, tablet and TV</h2>
             <img
               src="/images/mobile.png"
               alt=""
@@ -53,9 +57,11 @@ function LandingPage() {
           </div>
         </div>
       </div>
+      
       <div className={style.faqContainer}>
         <p>Frequently Asked Questions</p>
         <div className={style.faqChildDivContainer}>
+         
           <div className={style.faqChildDiv}>
             <p>What is Netflix?</p>
             <FontAwesomeIcon icon={faPlus} className={style.plusIcon} />
@@ -87,6 +93,8 @@ function LandingPage() {
           </div>
         </div>
       </div>
+
+
       <SignInOption
         customStylesBodyDiv={{
           backgroundColor: "black",
@@ -114,6 +122,7 @@ function LandingPage() {
         }}
       />
       <div className={style.segregate}></div>
+      
       <AdditionalInfo
         item1="FAQ"
         item2="Investor Relations"
