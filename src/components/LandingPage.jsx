@@ -59,7 +59,8 @@ function LandingPage() {
       </div>
       
       <div className={style.faqContainer}>
-        <p>Frequently Asked Questions</p>
+        <p className={style.faqHeading}>Frequently Asked Questions</p>
+        
         <div className={style.faqChildDivContainer}>
          
           <div className={style.faqChildDiv}>

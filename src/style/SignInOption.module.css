@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   background: transparent;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .bodyDiv h1 {
