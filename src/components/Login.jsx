@@ -10,7 +10,7 @@ function Login() {
       <div className={style.overlay}>
         <LogoHeader
           login="login as child comp"
-          logoCustomStyle={{ marginLeft: "6vw" }}
+          logoCustomStyle={{ fontSize: "2.5em" }}
         />
 
         <div className={style.signInOuterContainer}>
@@ -20,10 +20,14 @@ function Login() {
             <input type="password" placeholder="Password" />
             <button>Sign In</button>
           </div>
+
           <div className={style.rememberContainer}>
-            <input type="checkbox" id="rememberMe" />
-            <label htmlFor="rememberMe">Remember me</label>
-            <NavLink className={style.navlinkRememberContainer} to="/need-help">
+            <div className={style.rememberContainerLabelContainer}>
+              <input type="checkbox" id="rememberMe" />
+              <label>Remember me</label>
+            </div>
+
+            <NavLink className={style.rememberContainerNavlink} to="/need-help">
               Need Help?
             </NavLink>
           </div>
@@ -45,8 +49,8 @@ function Login() {
           </div>
         </div>
         <AdditionalInfo
-          item1="FAQ"
-          item2="Cookie Preference"
+          item1="Cookie Preference"
+          item2="FAQ"
           item5="Help Center"
           item6="Corporate Information"
           item9="Terms of Use"

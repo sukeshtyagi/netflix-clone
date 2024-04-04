@@ -37,6 +37,7 @@ function AdditionalInfo({
   const handleDropdownBlur = () => {
     setIsActive(false);
   };
+  
   return (
     <div
       className={`${style.additionalInfoContainer} 
