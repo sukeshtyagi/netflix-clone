@@ -34,9 +34,10 @@ function PaymentPicker() {
           Your payment is encrypted and you can change your payment method any
           time.
         </p>
+        
         <p className={style.line4}>Secure for peace of mind.</p>
         <p className={style.line5}>Cancel easy online.</p>
-        <div className={style.encryption}>
+        <div className={style.encryptionDiv}>
           <p className={style.text1}>End-to-end encrypted</p>
           <FontAwesomeIcon icon={faLock} className={style.lockIcon} />
         </div>

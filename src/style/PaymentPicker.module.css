@@ -1,94 +1,92 @@
+:root {
+  --base-font-size: 16px;
+}
+
 .paymentContainer {
   box-sizing: border-box;
-  max-width: 100vw;
-  max-height: 100vh;
-  height: 100vh;
+  width: 100%;
   background-color: white;
-  padding: 15px;
+  margin: 20vh 0;
 }
+
 .contentDiv {
   box-sizing: border-box;
-  max-width: 100%;
-  max-height: 100%;
-  width: 50vw;
-  height: auto;
+  width: 100%;
+  margin: auto;
+  padding: 30px 0;
   background-color: white;
   border: 3px solid black;
-  margin: 4% auto;
-  padding: 5em 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.step,
-.heading,
-.description,
-.line4,
-.line5,
-.encryption,
-.card,
-.upi,
-.text1,
-.text2,
-.text3 .lockIcon,
-.arrowIcon {
-  margin: 0;
-  padding: 0px;
+  gap: 15px;
 }
 
 .step {
-  font-size: 1.5em;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  font-size: calc(var(--base-font-size) * 1.1);
+  text-align: center;
   font-weight: 100;
   font-family: sans-serif;
-  margin-bottom: 1vh;
 }
 
 .heading {
-  font-family: sans-serif;
   box-sizing: border-box;
-  max-width: 100%;
-  width: 50%;
-  letter-spacing: 1px;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  font-size: calc(var(--base-font-size) * 1.5);
   text-align: center;
-  margin-bottom: 2vh;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
 .description {
-  font-size: 1.2em;
-  font-weight: normal;
   box-sizing: border-box;
-  max-width: 100%;
-  width: 65%;
-  letter-spacing: 1px;
+  width: 80%;
+  margin: 0;
+  padding: 0 0px;
+  font-size: calc(var(--base-font-size) * 1.2);
   text-align: center;
-  margin-bottom: 2vh;
+  font-weight: normal;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
 .line4,
 .line5 {
-  font-size: 1.2em;
   box-sizing: border-box;
-  max-width: 100%;
-  width: 40%;
-  letter-spacing: 1px;
+  width: 100%;
+  margin: 0;
+  padding: 0 0px;
+  font-size: calc(var(--base-font-size) * 1.2);
   text-align: center;
+  font-weight: normal;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
-.encryption {
+.encryptionDiv {
   box-sizing: border-box;
-  max-width: 100%;
-  width: 61.5%;
+  width: 60%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
   margin-top: 4vh;
+  margin: 0;
+  padding: 0px;
 }
 
 .text1 {
-  font-size: 1em;
+  box-sizing: border-box;
+  font-size: calc(var(--base-font-size) * 0.8);
+  margin: 0;
+  padding: 0px;
 }
 
 .lockIcon {
@@ -97,42 +95,66 @@
 
 .card {
   box-sizing: border-box;
-  max-width: 100%;
   width: 62%;
-  height: 7vh;
+  margin: 0;
+  padding: 0px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 2px solid darkgray;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid darkgray;
-  padding: 1vh 1vw;
-  margin-top: 5px;
   cursor: pointer;
 }
 
 .text2 {
-  font-size: 1.2em;
-  font-weight: 100;
+  box-sizing: border-box;
+  font-size: calc(var(--base-font-size) * 0.9);
+  margin: 0;
+  padding: 0px;
 }
 
 .arrowIcon {
-  font-size: 1.25em;
+  font-size: calc(var(--base-font-size) * 0.8);
+  margin: 0;
+  padding: 0px;
 }
 
 .upi {
   box-sizing: border-box;
-  max-width: 100%;
   width: 62%;
-  height: 7vh;
+  margin: 0;
+  padding: 0px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 2px solid darkgray;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid darkgray;
-  padding: 0vh 1vw;
-  margin-top: 5px;
   cursor: pointer;
 }
 
 .text3 {
-  font-size: 1em;
-  font-weight: 100;
+  box-sizing: border-box;
+  font-size: calc(var(--base-font-size) * 0.9);
+  margin: 0;
+  padding: 0px;
+}
+
+@media screen and (min-width: 500px) {
+  .contentDiv {
+    width: 500px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  :root {
+    --base-font-size: 25px;
+  }
+
+  .contentDiv {
+    width: 1000px;
+    margin: auto;
+  }
 }
