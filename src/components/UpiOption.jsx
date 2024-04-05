@@ -1,10 +1,10 @@
 import React from "react";
 import style from "../style/UpiOption.module.css";
-import CreditOption2 from "./CreditOption2";
+import UpiOptionParentComponent from "./UpiOptionParentComponent";
 
 function UpiOption() {
   return (
-    <CreditOption2
+    <UpiOptionParentComponent
       upiComponent="UPI "
       upiImageStyle={style.upiImage}
       upiInfoStyle={style.upiInfo}

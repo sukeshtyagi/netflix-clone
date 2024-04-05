@@ -1,11 +1,12 @@
 .upiImage {
-  width: 35%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 125px;
   margin: 1vh 0;
 }
 .upiInfo {
   box-sizing: border-box;
-  max-width: 100%;
-  width: 70%;
+  width: 100%;
   margin: 1vh 0;
   padding: 0 10px;
   color: #000;

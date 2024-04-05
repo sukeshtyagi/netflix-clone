@@ -6,9 +6,14 @@
   overflow-y: hidden;
   overflow-x: hidden;
 }
+
 /*styles for additional info comp to be passed as prop*/
+.outerContainer{
+  background-color: rgb(235, 228, 228);
+}
+
 .additionalInfoContainer {
-  margin-top: 0vh; /*reduced to 0*/
+  margin-top: 0vh; 
   border-top: 5px solid darkgrey;
   background-color: rgb(241, 240, 240);
   gap: 1vh;

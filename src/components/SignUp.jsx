@@ -54,7 +54,8 @@ function SignUp({ child }) {
         item10="Corporate Information"
         item13="Terms of Use"
         
-        signupAdditionalInfoContainerStyle={style.additionalInfoContainer}
+        signupOuterContainerStyle={style.outerContainer}
+        signupAdditionalInfoContainerStyle={style.additionalInfoContainer} 
         signupInfoChildDivContainerStyle={style.infoChildDivContainer}
         signupContactParaStyle={style.contactPara}
         signupNavlinkStyle={style.navlink}

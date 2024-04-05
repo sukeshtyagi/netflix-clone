@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import style from "../style/CreditOption.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
 
-function CreditOption2({ upiComponent, upiImageStyle, upiInfoStyle }) {
+function UpiOptionParentComponent({
+  upiComponent,
+  upiImageStyle,
+  upiInfoStyle,
+}) {
   const [selectedOption, setSelectedOption] = useState("");
   const [upiId, setUpiId] = useState("");
   const [error, setError] = useState(false);
@@ -38,7 +42,7 @@ function CreditOption2({ upiComponent, upiImageStyle, upiInfoStyle }) {
         {upiComponent && (
           <img
             src="/images/upi.png"
-            alt="Cards we accept"
+            alt="Accepted digital payment modes"
             className={upiImageStyle}
           />
         )}
@@ -97,4 +101,4 @@ function CreditOption2({ upiComponent, upiImageStyle, upiInfoStyle }) {
   );
 }
 
-export default CreditOption2;
+export default UpiOptionParentComponent;
