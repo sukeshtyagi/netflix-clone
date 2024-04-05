@@ -112,6 +112,34 @@
   border-radius: 8px;
 }
 
+.errorMessage1 {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  margin-top: 1vh;
+  padding: 0;
+  font-size: 0.9em;
+  color: red;
+}
+
+.errorMessage2 {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 1vh 0;
+  padding: 0;
+  font-size: 0.9em;
+  color: red;
+}
+
+.errorMessage3 {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  color: red;
+}
+
 @media screen and (min-width: 375px) {
   .contentDiv {
     width: 300px;
@@ -125,30 +153,4 @@
     font-size: 1.25em;
     margin: auto;
   }
-}
-
-.errorMessage1 {
-  box-sizing: border-box;
-  margin: 0;
-  margin-top: 1vh;
-  padding: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-.errorMessage2 {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-.errorMessage3 {
-  box-sizing: border-box;
-  margin: 0;
-  margin-bottom: 0vh;
-  padding: 0;
-  max-width: 100%;
-  height: auto;
 }

@@ -49,7 +49,7 @@ function RegisterationForm() {
             <p className={style.errorMessage1}>
               Password must be at least 6 characters long
             </p>
-            <p className={style.errorMessage}>
+            <p className={style.errorMessage2}>
               Must include lowercase, uppercase.
             </p>
             <p className={style.errorMessage3}>

@@ -18,7 +18,7 @@ function ChoosePlan() {
         <h1 className={style.contentDivHeading1}>Choose your plan.</h1>
 
         <div className={style.lineDivContainer}>
-          <FontAwesomeIcon icon={faCheck} className={style.icon} />
+          <FontAwesomeIcon icon={faCheck} className={style.icon1} />
           <p className={style.lineDivLine1}>No commitments, cancel anytime.</p>
         </div>
 
@@ -30,7 +30,7 @@ function ChoosePlan() {
         </div>
 
         <div className={style.lineDivContainer}>
-          <FontAwesomeIcon icon={faCheck} className={style.icon} />
+          <FontAwesomeIcon icon={faCheck} className={style.icon3} />
           <p className={style.lineDivLine3}>No ads and no extra fees. Ever.</p>
         </div>
         <button className={style.childDivButton} onClick={handleButtonClick}>
