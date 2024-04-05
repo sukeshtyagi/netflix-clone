@@ -31,7 +31,7 @@ function RegisterationForm() {
         <h1 className={style.contentDivHeading1}>Welcome back!</h1>
         <h1 className={style.contentDivHeading2}>Joining Netflix is easy.</h1>
         <p className={style.contentDivLine2}>
-          Enter your password and Pou'll be watching in no time.
+          Enter your password and You'll be watching in no time.
         </p>
         <p className={style.emailLabel}>Email</p>
         {userEmail && <p className={style.userEmail}>{userEmail}</p>}
