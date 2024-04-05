@@ -70,8 +70,8 @@ function PlanForm() {
 
   const handleButtonClick = () => {
     if (amountToPay !== null) {
-      localStorage.setItem("price",amountToPay)
-      localStorage.setItem("plan",plan)
+      localStorage.setItem("price", amountToPay);
+      localStorage.setItem("plan", plan);
       navigate("/signup/paymentPicker");
     } else {
       setErrMsg(true);
@@ -83,14 +83,23 @@ function PlanForm() {
       <div className={style.contentDiv}>
         <p className={style.step}>Step 2 of 3</p>
         <h1 className={style.heading}>Choose plan that's right for you</h1>
-        <p className={style.popular}>Most popular</p>
+
         <div className={style.planContainer}>
           <div className={style.planDetails} onClick={handlePlanPremium}>
             <div className={style.planNamePremium}>
-              <p className={style.normal}>Premium</p>
-              <p className={style.quality}>4k+HDR</p>
-              {selectPlanPremium && <input type="checkbox" checked />}
+              <div className={style.planNameInnerDiv}>
+                <p className={style.normal}>Premium</p>
+                <p className={style.quality}>4k+HDR</p>
+              </div>
+              {selectPlanPremium && (
+                <input
+                  type="checkbox"
+                  checked
+                  className={style.planSelectedIcon}
+                />
+              )}{" "}
             </div>
+
             <div className={style.detail}>
               <p className={style.line1}>Monthly Price</p>
               <p className={style.line2} id="premiumPrice">
@@ -127,9 +136,18 @@ function PlanForm() {
 
           <div className={style.planDetails} onClick={handlePlanStandard}>
             <div className={style.planNameStandard}>
-              <p className={style.normal}>Standard</p>
-              <p className={style.quality}>1080p</p>
-              {selectPlanStandard && <input type="checkbox" checked />}
+              <div className={style.planNameInnerDiv}>
+                <p className={style.normal}>Standard</p>
+                <p className={style.quality}>1080p</p>
+              </div>
+
+              {selectPlanStandard && (
+                <input
+                  type="checkbox"
+                  checked
+                  className={style.planSelectedIcon}
+                />
+              )}
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Monthly Price</p>
@@ -166,10 +184,21 @@ function PlanForm() {
           </div>
 
           <div className={style.planDetailsBasic} onClick={handlePlanBasic}>
+            {/* <p className={style.popular}>Most popular</p>*/}
+
             <div className={style.planNameBasic}>
-              <p className={style.normal}>Basic</p>
-              <p className={style.quality}>720p</p>
-              {selectPlanBasic && <input type="checkbox" checked />}
+              <div className={style.planNameInnerDiv}>
+                <p className={style.normal}>Basic</p>
+                <p className={style.quality}>720p</p>
+              </div>
+
+              {selectPlanBasic && (
+                <input
+                  type="checkbox"
+                  checked
+                  className={style.planSelectedIcon}
+                />
+              )}
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Monthly Price</p>
@@ -209,9 +238,17 @@ function PlanForm() {
 
           <div className={style.planDetails} onClick={handlePlanMobile}>
             <div className={style.planNameMobile}>
-              <p className={style.normal}>Mobile</p>
-              <p className={style.quality}>480p</p>
-              {selectPlanMobile && <input type="checkbox" checked />}
+              <div className={style.planNameInnerDiv}>
+                <p className={style.normal}>Mobile</p>
+                <p className={style.quality}>480p</p>
+              </div>
+              {selectPlanMobile && (
+                <input
+                  type="checkbox"
+                  checked
+                  className={style.planSelectedIcon}
+                />
+              )}
             </div>
             <div className={style.detail}>
               <p className={style.line1}>Monthly Price</p>
@@ -258,6 +295,7 @@ function PlanForm() {
           </NavLink>
           for more details.
         </p>
+        
         <button className={style.contentDivButton} onClick={handleButtonClick}>
           Next
         </button>
